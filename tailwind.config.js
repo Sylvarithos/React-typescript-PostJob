@@ -2,7 +2,6 @@
 module.exports = {
     content: ['./src/**/*.{js,jsx,ts,tsx}'],
     theme: {
-
         extend: {
             fontFamily: {
                 grotesk: ['Space Grotesk', 'sans-serif', 'Arial'],
@@ -10,7 +9,7 @@ module.exports = {
             colors: {
                 primary: '#07242B',
                 secondary: '#FFBE00',
-                "custom-grey": "rgba(35,31,32,0.35)"
+                'custom-grey': 'rgba(35,31,32,0.35)',
             },
             backgroundImage: {
                 'heroSection-back': 'url(../public/images/HeroSection.jpg)',

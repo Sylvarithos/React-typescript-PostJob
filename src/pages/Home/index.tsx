@@ -14,12 +14,10 @@ function Home() {
         <div>
             <Header theme='dark' />
             <HeroSection />
-            <div className={`mx-32 mb-12 relative`}>
-                <ClientSection />
-                <ServiceSection />
-                <FindJobSection />
-                <FeaturedServicesSection />
-            </div>
+            <ClientSection />
+            <ServiceSection />
+            <FindJobSection />
+            <FeaturedServicesSection />
             <MarketPlaceSection />
             <TestimonailsSection />
             <DownloadSection />

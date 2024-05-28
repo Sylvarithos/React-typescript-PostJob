@@ -1,5 +1,5 @@
 import { Button } from '@mui/material'
-import { Category, Person } from '@mui/icons-material'
+import { Category, Person, Diversity2 } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 
 interface Props {
@@ -13,35 +13,36 @@ function Header(props: Props) {
     const imgsrc = theme === 'light' ? './images/logo_white.png' : './images/logo_black.png'
 
     return (
-        <header className='w-full border-b border-b-slate-500'>
-            <nav className={`${bgColor} border-gray-200 py-5 px-16`}>
-                <div className='flex flex-wrap items-center justify-between px-4 mx-auto'>
-                    <div className='flex items-center'>
-                        <Link to='/'>
-                            <img src={imgsrc} className='h-6 mr-3 sm:h-14' alt='Landwind Logo' />
-                        </Link>
-                        <span className='w-4 h-8 border-r border-slate-500'>&nbsp;</span>
-                        <Link to='/categories' className={`text-${color} self-center font-thin whitespace-nowrap px-12`}>
-                            <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <Category />
-                                <Button style={{ color, textTransform: 'none' }}>Categories</Button>
-                            </div>
-                        </Link>
-                        <Link to='/howitworks' className={`text-${color} self-center font-thin whitespace-nowrap`}>
-                            <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <Category />
-                                <Button style={{ color, textTransform: 'none' }}>How it Works</Button>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className='flex items-center lg:order-2'>
-                        <Link to='/login' className={`text-${color} self-center font-thin whitespace-nowrap px-6`}>
-                            Login
-                        </Link>
-                        <Button color='secondary' variant='contained' startIcon={<Person />} style={{ textTransform: 'none', borderRadius: '10px' }}>
-                            Join as a Server Provider
-                        </Button>
-                        {/* <button
+        <header className={`${bgColor} w-full border-b border-b-slate-500`}>
+            <div className='container mx-auto px-4'>
+                <nav className='border-gray-200 py-5 px-16'>
+                    <div className='flex flex-wrap items-center justify-between px-4 mx-auto'>
+                        <div className='flex items-center'>
+                            <Link to='/'>
+                                <img src={imgsrc} className='h-6 mr-3 sm:h-14' alt='Landwind Logo' />
+                            </Link>
+                            <span className='w-4 h-8 border-r border-slate-500'>&nbsp;</span>
+                            <Link to='/categories' className={`text-${color} self-center font-thin whitespace-nowrap px-12`}>
+                                <div style={{ display: 'flex', alignItems: 'center' }}>
+                                    <Category />
+                                    <Button style={{ color, textTransform: 'none' }}>Categories</Button>
+                                </div>
+                            </Link>
+                            <Link to='/howitworks' className={`text-${color} self-center font-thin whitespace-nowrap`}>
+                                <div style={{ display: 'flex', alignItems: 'center' }}>
+                                    <Diversity2 />
+                                    <Button style={{ color, textTransform: 'none' }}>How it Works</Button>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className='flex items-center lg:order-2'>
+                            <Link to='/login' className={`text-${color} self-center font-thin whitespace-nowrap px-6`}>
+                                Login
+                            </Link>
+                            <Button color='secondary' variant='contained' startIcon={<Person />} style={{ textTransform: 'none', borderRadius: '10px' }}>
+                                Join as a Server Provider
+                            </Button>
+                            {/* <button
                             data-collapse-toggle='mobile-menu-2'
                             type='button'
                             className='inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
@@ -64,9 +65,10 @@ function Header(props: Props) {
                                 ></path>
                             </svg>
                         </button> */}
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
     )
 }

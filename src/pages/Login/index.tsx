@@ -4,6 +4,7 @@ import { Paper, Typography, TextField, Checkbox, Button, Divider, Box } from '@m
 import { FacebookOutlined } from '@mui/icons-material'
 import { Google } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
+import Footer from '../Home/Footer'
 
 function Login() {
     return (
@@ -14,7 +15,7 @@ function Login() {
                     display: 'flex',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    marginTop: '40px',
+                    marginY: '40px',
                 }}
             >
                 <Paper
@@ -77,6 +78,7 @@ function Login() {
                     </Typography>
                 </Paper>
             </Box>
+            <Footer />
         </>
     )
 }

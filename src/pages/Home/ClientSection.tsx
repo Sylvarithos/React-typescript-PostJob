@@ -1,30 +1,33 @@
-import React from "react";
-import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid'
+
 function ClientSection() {
     return (
-        <Grid
-            container
-            direction="row-reverse"
-            justifyContent="center"
-            alignItems="center"
-            // spacing={12}
-            className="bg-custom-grey p-12 m-0 mt-16 z-0"
-        >
-            
-            <Grid item className="px-10">
-                <img src="./images/Home/Clients/4.png"></img>
-            </Grid>
-            <Grid item className="px-10">
-                <img src="./images/Home/Clients/3.png"></img>
-            </Grid>
-            <Grid item className="px-10">
-                <img src="./images/Home/Clients/2.png"></img>
-            </Grid>
-            <Grid item className="px-10">
-                <img src="./images/Home/Clients/1.png"></img>
-            </Grid>
-        </Grid>
+        <div className='w-full bg-[#F2F2F2]'>
+            <div className='container mx-auto px-20 py-12'>
+                <Grid
+                    container
+                    direction='row-reverse'
+                    justifyContent='center'
+                    alignItems='center'
+                    // spacing={12}
+                    className='bg-[#07242B] bg-opacity-20 py-8 m-0 z-0'
+                >
+                    <Grid item className='px-10'>
+                        <img src='./images/Home/Clients/4.png' alt='Client' />
+                    </Grid>
+                    <Grid item className='px-10'>
+                        <img src='./images/Home/Clients/3.png' alt='Client' />
+                    </Grid>
+                    <Grid item className='px-10'>
+                        <img src='./images/Home/Clients/2.png' alt='Client' />
+                    </Grid>
+                    <Grid item className='px-10'>
+                        <img src='./images/Home/Clients/1.png' alt='Client' />
+                    </Grid>
+                </Grid>
+            </div>
+        </div>
     )
 }
 
-export default ClientSection;
+export default ClientSection
