@@ -10,6 +10,8 @@ function Header(props: Props) {
     const { theme = 'light' } = props
     const bgColor = theme === 'light' ? 'white' : 'primary'
     const color = theme === 'light' ? '#07242B' : 'white'
+    const imgsrc = theme === 'light' ? './images/logo_white.png' : './images/logo_black.png'
+    console.log(bgColor);
 
     return (
         <header className='w-full border-b border-b-slate-500'>
@@ -17,7 +19,7 @@ function Header(props: Props) {
                 <div className='flex flex-wrap items-center justify-between px-4 mx-auto'>
                     <div className='flex items-center'>
                         <Link to='/'>
-                            <img src='./images/logo.png' className='h-6 mr-3 sm:h-14' alt='Landwind Logo' />
+                            <img src={imgsrc} className='h-6 mr-3 sm:h-14' alt='Landwind Logo' />
                         </Link>
                         <span className='w-4 h-8 border-r border-slate-500'>&nbsp;</span>
                         <Link to='/categories' className={`text-${color} self-center font-thin whitespace-nowrap px-12`}>
