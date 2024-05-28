@@ -8,14 +8,13 @@ interface Props {
 
 function Header(props: Props) {
     const { theme = 'light' } = props
-    const bgColor = theme === 'light' ? 'white' : 'primary'
+    const bgColor = theme === 'light' ? 'bg-white' : 'bg-primary'
     const color = theme === 'light' ? '#07242B' : 'white'
     const imgsrc = theme === 'light' ? './images/logo_white.png' : './images/logo_black.png'
-    console.log(bgColor);
 
     return (
         <header className='w-full border-b border-b-slate-500'>
-            <nav className={`bg-${bgColor} border-gray-200 py-5 px-16`}>
+            <nav className={`${bgColor} border-gray-200 py-5 px-16`}>
                 <div className='flex flex-wrap items-center justify-between px-4 mx-auto'>
                     <div className='flex items-center'>
                         <Link to='/'>
