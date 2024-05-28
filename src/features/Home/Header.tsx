@@ -3,7 +3,7 @@ import { Category, Person } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 
 interface Props {
-    theme?: 'light' | 'dark';
+    theme?: 'light' | 'dark'
 }
 
 function Header(props: Props) {
