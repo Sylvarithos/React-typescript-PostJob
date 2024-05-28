@@ -8,7 +8,7 @@ function ClientSection() {
             justifyContent="center"
             alignItems="center"
             // spacing={12}
-            className="bg-custom-grey p-12 m-0 mt-16"
+            className="bg-custom-grey p-12 m-0 mt-16 z-0"
         >
             
             <Grid item className="px-10">
