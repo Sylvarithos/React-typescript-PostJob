@@ -1,23 +1,41 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { store } from './app/store';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import './index.css';
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import { Provider } from 'react-redux'
+import { store } from './app/store'
+import App from './App'
+import reportWebVitals from './reportWebVitals'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import './index.css'
 
-const container = document.getElementById('root')!;
-const root = createRoot(container);
+const container = document.getElementById('root')!
+const root = createRoot(container)
+
+// Create a custom theme
+const theme = createTheme({
+    typography: {
+        fontFamily: ['Space Grotesk', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'].join(','), // Set the desired font family
+    },
+    palette: {
+        primary: {
+            main: '#07242B', // Your custom primary color
+        },
+        secondary: {
+            main: '#FFBE00', // Your custom secondary color
+        },
+    },
+})
 
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>
-);
+    <React.StrictMode>
+        <Provider store={store}>
+            <ThemeProvider theme={theme}>
+                <App />
+            </ThemeProvider>
+        </Provider>
+    </React.StrictMode>
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals()
