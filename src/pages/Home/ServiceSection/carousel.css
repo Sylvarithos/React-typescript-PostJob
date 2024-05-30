@@ -1,0 +1,8 @@
+
+.carousel-container {
+  padding: 0 10px; /* Adjust padding as necessary */
+}
+
+.carousel-item {
+  margin: 0 10px; /* Adjust this value to set the gap between items */
+}

@@ -1,11 +1,14 @@
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
+import './carousel.css'
+
 
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 4.2,
+        items: 5.5,
         slidesToSlide: 1, // optional, default to 1.
+        partialVisibilityGutter: 30
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
@@ -20,7 +23,7 @@ const responsive = {
 }
 function MyCarousel() {
     return (
-        <Carousel responsive={responsive}>
+        <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={3000} infinite={true} containerClass='carousel-container' itemClass='carousel-item'>
             <div className='bg-service-1 w-[295px] h-[366px]'>
                 <p className='text-[15px] text-white pl-8 pt-12'>Read more customers</p>
                 <h5 className='font-bold text-[20px] text-white pl-8'>Social Media</h5>

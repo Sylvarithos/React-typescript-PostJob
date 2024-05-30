@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material'
 import Button from '@mui/material/Button'
+import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 
 function FindJobSection() {
     return (
@@ -26,8 +27,9 @@ function FindJobSection() {
                     Place new request
                 </Button> */}
 
-                    <button className="bg-secondary hover:bg-yellow-600 text-white py-[22px] px-[100px] mt-8 rounded-md shadow-md transition duration-300 ease-in-out">
-                        Place new request
+                    <button className="bg-secondary hover:bg-yellow-600 text-black font-bold py-[22px] px-[100px] mt-8 rounded-md shadow-md transition duration-300 ease-in-out">
+                        Place new request &nbsp;&nbsp;
+                        <RocketLaunchIcon />
                     </button>
                 </div>
 

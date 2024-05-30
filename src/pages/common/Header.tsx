@@ -1,7 +1,11 @@
 import { Button } from '@mui/material'
-import { Category, Person, Diversity2 } from '@mui/icons-material'
+import { Person } from '@mui/icons-material'
+import HowToVoteIcon from '@mui/icons-material/HowToVote';
+import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
+import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 import { Link } from 'react-router-dom'
-import { ClassNames } from '@emotion/react'
+
+
 
 interface Props {
     theme?: 'light' | 'dark'
@@ -14,40 +18,40 @@ function Header(props: Props) {
     const imgsrc = theme === 'light' ? './images/logo_white.png' : './images/logo_black.png'
 
     return (
-        <header className={`${bgColor} sticky border-b-[1px]  top-0 z-40 py-[5.5px] w-full border-b-slate-300`}>
-            <div className='container mx-auto px-4'>
-                <nav className=' py-5 px-16'>
-                    <div className='flex flex-wrap items-center justify-between px-3  align-middle'>
-                        <div className='flex items-center'>
-                            <Link to='/'>
-                                <img src={imgsrc} className='h-6 mr-3 sm:h-14' alt='Landwind Logo' />
-                            </Link>
-                            <span className='w-4 h-8 border-r border-slate-500'>&nbsp;</span>
-                            <Link to='/categories' className={`text-${color} self-center font-thin whitespace-nowrap px-12`}>
-                                <div style={{ display: 'flex', alignItems: 'center' }} className='space-x-4'>
-                                    {/* <Category /> */}
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
-                                    </svg>
+        <header className={`${bgColor} sticky border-b-[1px]  top-0 z-40 pt-[29px] pb-[25px] w-full border-b-slate-600  pm-[84px] 2xl:pl-[269px] 2xl:pr-64`}>
+            {/* <div className='container mx-auto px-4'> */}
+            <nav className=' '>
+                <div className='flex flex-wrap items-center justify-between  align-middle'>
+                    <div className='flex items-center'>
+                        <Link to='/'>
+                            <img src={imgsrc} className='xl:h-[54px]' alt='Landwind Logo' />
+                        </Link>
+                        <span className='ml-[1px] w-4 h-10 border-r border-slate-600'>&nbsp;</span>
 
-                                    <Button style={{ color, textTransform: 'none' }}>Categories</Button>
-                                </div>
-                            </Link>
-                            <Link to='/howitworks' className={`text-${color} self-center font-thin whitespace-nowrap`}>
-                                <div style={{ display: 'flex', alignItems: 'center' }}>
-                                    <Diversity2 />
-                                    <Button style={{ color, textTransform: 'none' }}>How it Works</Button>
-                                </div>
-                            </Link>
+                        <div className={`flex items-center text-${color} hover:cursor-pointer font-extralight text-[15px] ml-9 font`}>
+                            <GridViewOutlinedIcon style={{ width: '1.3rem', marginRight: '0.5rem' }} />
+                            <span>Categories</span>
                         </div>
-                        <div className='flex items-center lg:order-2'>
-                            <Link to='/login' className={`text-${color} self-center font-thin whitespace-nowrap px-6`}>
-                                Login
-                            </Link>
-                            <Button color='secondary' variant='contained' startIcon={<Person />} style={{ textTransform: 'none', borderRadius: '10px' }}>
-                                Join as a Server Provider
-                            </Button>
-                            {/* <button
+                        <Link to='/howitworks' className={`text-${color} self-center font-thin whitespace-nowrap`}>
+                            <div className={`flex items-center text-${color} hover:cursor-pointer font-extralight text-[15px] ml-9 font`}>
+                                <HowToVoteIcon style={{ width: '1.3rem', marginRight: '0.5rem' }} />
+                                <span>How it Works</span>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className='flex items-center'>
+                        <Link to='/login' className={`text-${color} self-center font-thin whitespace-nowrap px-10 hover:text-secondary`}>
+                            Login
+                        </Link>
+                        <Button color='secondary' variant='contained' startIcon={<Person />} style={{ textTransform: 'none', borderRadius: '10px', height: '35px' }}>
+                            <span className='text-[16px]'>Join as a Server Provider</span>
+                        </Button>
+                        {/* 
+                        <button className="bg-secondary hover:bg-yellow-600 text-black h-9 w-60 rounded-md shadow-md transition duration-300 ease-in-out">
+                            <PersonIcon />Place new request
+                        </button> */}
+                        <QuestionMarkOutlinedIcon style={{ height: '1.3rem', color: `${color}` }} />
+                        {/* <button
                             data-collapse-toggle='mobile-menu-2'
                             type='button'
                             className='inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
@@ -70,10 +74,10 @@ function Header(props: Props) {
                                 ></path>
                             </svg>
                         </button> */}
-                        </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
+            {/* </div> */}
         </header>
     )
 }

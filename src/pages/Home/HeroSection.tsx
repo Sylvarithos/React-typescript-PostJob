@@ -76,18 +76,18 @@ function HeroSection() {
         <section className='w-full bg-primary'>
             <div className='container mx-auto px-20 bg-heroSection-back bg-contain bg-no-repeat'>
                 <div className='border-gray-200'>
-                    <div className='py-24'>
+                    <div className='py-28'>
                         <h1 className='text-7xl font-bold text-white leading-tight'>
                             Find the perfect
                             <br />
                             professional for you.
                         </h1>
-                        <p className='text-3xl text-white my-12'>Get free quotes within minutes</p>
+                        <p className='text-3xl text-white my-10'>Get free quotes within minutes</p>
                         <div style={{ display: 'inline-block' }}>
-                            <Paper component='form' sx={{ p: '7px 16px', display: 'flex', alignItems: 'center' }}>
+                            <Paper component='form' sx={{ p: '7px 10px', display: 'flex', alignItems: 'center' }}>
                                 <TextField
                                     id='input-where'
-                                    placeholder='Where are you looking for?'
+                                    placeholder='What are you looking for?'
                                     onClick={handleToggle}
                                     InputProps={{
                                         disableUnderline: true,
@@ -99,6 +99,8 @@ function HeroSection() {
                                         style: {
                                             fontSize: '20px',
                                             width: '350px',
+                                            height: '64px',
+                                            paddingLeft: '10px'
                                         },
                                     }}
                                     value={whereInput}
@@ -130,7 +132,7 @@ function HeroSection() {
                                         </Grow>
                                     )}
                                 </Popper>
-                                <Divider sx={{ height: 28, m: 0.5 }} orientation='vertical' />
+                                <Divider sx={{ height: 50, m: 0.5, borderColor: '#d2d2d2' }} orientation='vertical' />
                                 <TextField
                                     id='input-postcode'
                                     placeholder='Postcode'
@@ -144,17 +146,18 @@ function HeroSection() {
                                         style: {
                                             fontSize: '20px',
                                             width: '250px',
+                                            paddingLeft: '10px'
                                         },
                                     }}
                                     variant='standard'
                                     inputRef={inputRef}
                                 />
-                                <Button color='secondary' variant='contained' style={{ padding: '10px 30px', textTransform: 'none', fontSize: '20px' }}>
+                                <Button color='secondary' variant='contained' style={{ padding: '13px 40px', textTransform: 'none', fontSize: '20px' }}>
                                     Search
                                 </Button>
                             </Paper>
                         </div>
-                        <p className='text-2xl text-white my-12'>Popular: House Cleaning, Web Design, Personal Trainers</p>
+                        <p className='text-2xl text-white my-11'>Popular: House Cleaning, Web Design, Personal Trainers</p>
                     </div>
                 </div>
             </div>

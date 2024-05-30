@@ -20,7 +20,7 @@ module.exports = {
         "service-5": "url(../public/images/Home/Services/5.png)",
         "find-job-back": "url(../public/images/Home/FindJob/background.png)",
         "find-job-back2": "url(../public/images/Order/login.png)",
-        "marketing-logo": "url(../public/images/Home/Marketing/logo.png)",
+        "marketing-logo": "url(../public/images/Home/Marketing/join1.png)",
         "download-back": "url(../public/images/Home/Download/back.png)",
         "footer-back": "url(../public/images/Home/Footer/back.png)",
       },

@@ -1,17 +1,16 @@
 import { Grid } from '@mui/material'
-import Button from '@mui/material/Button'
-import { ArrowForward } from '@mui/icons-material'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 function FeaturedServicesSection() {
     return (
         <div className='container mx-auto px-20 my-12'>
             <div className='mt-[90px]'>
-                <h2 className='font-bold text-3xl text-blank'>
+                <div className='font-bold text-3xl text-blank'>
                     Featured Services
                     <span className='text-xl text-[#07242b] float-right'>
                         View all
-                        <ArrowForward style={{ paddingBottom: '0.3rem', marginTop: '0.2rem' }} />
+                        <PlayArrowIcon style={{ paddingBottom: '0.3rem', marginTop: '0.2rem', fontSize: '1.8rem' }} />
                     </span>
-                </h2>
+                </div>
                 <Grid container spacing={4}>
                     <Grid item xs={6} md={4}>
                         <div className='rounded-[10px] bg-[#07242B]'>

@@ -3,7 +3,7 @@ import Button from '@mui/material/Button'
 function FindJobSection() {
     return (
         <div className='w-full bg-[#F2F2F2]'>
-            <div className='container mx-auto px-20 pt-6 pb-12'>
+            <div className='container mx-auto px-20 pt-20 pb-12'>
                 <div className='bg-find-job-back h-[412px] rounded-[10px] bg-cover'>
                     <Grid container>
                         <Grid item xs={6} md={8}>
@@ -30,6 +30,9 @@ function FindJobSection() {
                 </div>
             </div>
         </div>
+
+
+
     )
 }
 

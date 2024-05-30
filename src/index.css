@@ -15,3 +15,7 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+    display: none;
+}

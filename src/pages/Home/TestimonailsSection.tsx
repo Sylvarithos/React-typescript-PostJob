@@ -3,18 +3,18 @@ import { Grid } from '@mui/material'
 function TestimonailsSection() {
     return (
         <section className='w-full'>
-            <div className='container mx-auto px-20 pt-6 pb-12'>
+            <div className='container mx-auto px-20 pt-6 pb-2'>
                 <div className=' py-16 px-16 bg-no-repeat'>
-                    <h1 className='text-center font-bold text-[45px] text-black mt-10'>Testimonails</h1>
-                    <h3 className='text-[20px] text-black text-center mt-6'>Interdum et malesuada fames ac ante ipsum</h3>
-                    <h1 className='font-bold text-[150px] text-[#07242b] text-center'>“</h1>
-                    <h3 className='text-center text-[20px] text-black'>
+                    <div className='text-center font-bold text-[51px] text-black mt-10'>Testimonails</div>
+                    <div className='text-[25px] text-black text-center mt-6'>Interdum et malesuada fames ac ante ipsum</div>
+                    <div className='font-bold text-[195px] text-[#07242b] text-center'>“</div>
+                    <div className='text-center text-[25px] text-black'>
                         Interdum et malesuada fames ac ante ipsumInterdum et malesuada fames ac ante ipsumInterdum et malesuada fames ac ante ipsumInterdum et
                         malesuada fames ac ante ipsumInterdum et malesuada fames ac ante ipsumInterdum et malesuada fames ac ante ipsumInterdum et malesuada
                         fames ac ante ipsumInterdum et malesuada fames ac ante ipsumInterdum et malesuada fames ac ante ipsum
-                    </h3>
-                    <h2 className='mt-16 text-center font-bold text-3xl text-black'>Thomil Kalus</h2>
-                    <h3 className='mt-4 mb-10 text-center text-[20px] text-black'>Bank Manager, United Arab.</h3>
+                    </div>
+                    <h2 className='mt-20 text-center font-bold text-3xl text-black'>Thomil Kalus</h2>
+                    <div className='mt-1 mb-10 text-center text-[25px] text-black'>Bank Manager, United Arab.</div>
                     <Grid container direction='row' justifyContent='center' alignItems='center' spacing={6}>
                         <Grid item>
                             <img src='./images/Home/Testimonails/1.png'></img>

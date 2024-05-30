@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 import Footer from '../common/Footer'
 import FindJobSection from './FindJobSection'
 import FeaturedServicesSection from './FeaturedServicesSection'
+import TransitionsModal from './Modal'
+
 
 function Order() {
   return (
@@ -14,6 +16,7 @@ function Order() {
       <Header />
       <FindJobSection />
       <FeaturedServicesSection />
+      <TransitionsModal />
       <Footer />
     </>
   )
