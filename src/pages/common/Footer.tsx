@@ -1,11 +1,18 @@
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord'
 import { Grid } from '@mui/material'
 import Button from '@mui/material/Button'
-function Footer() {
+
+interface Props {
+    theme?: 'light' | 'dark'
+}
+
+function Footer(props: Props) {
+    const { theme = 'light' } = props
+    const bordercolor = theme === 'light' ? 'border-secondary' : ''
     return (
-        <section className='w-full bg-primary'>
+        <section className={`w-full bg-primary border-t-[14px] ${bordercolor}`} >
             <div className='container mx-auto px-4'>
-                <div className='px-16 py-12 bg-footer-back bg-no-repeat bg-cover'>
+                <div className='px-16 py-12 bg-footer-back bg-no-repeat bg-cover '>
                     <div className=' flex gap-16 items-start relative bg-transparent'>
                         <h5 className='font-bold text-[20px] text-white'>Terms of Service</h5>
                         <h5 className='font-bold text-[20px] text-white'>Privacy Policy</h5>
@@ -69,7 +76,7 @@ function Footer() {
                     </Button>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

@@ -1,4 +1,4 @@
-import Header from '../../features/Home/Header'
+import Header from '../common/Header'
 import HeroSection from './HeroSection'
 import ClientSection from './ClientSection'
 import ServiceSection from './ServiceSection/'
@@ -7,7 +7,7 @@ import FeaturedServicesSection from './FeaturedServicesSection'
 import MarketPlaceSection from './MarketPlaceSection'
 import TestimonailsSection from './TestimonailsSection'
 import DownloadSection from './DownloadSection'
-import Footer from './Footer'
+import Footer from '../common/Footer'
 
 function Home() {
     return (
@@ -21,7 +21,7 @@ function Home() {
             <MarketPlaceSection />
             <TestimonailsSection />
             <DownloadSection />
-            <Footer />
+            <Footer theme='dark' />
         </div>
     )
 }

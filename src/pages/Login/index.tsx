@@ -1,10 +1,10 @@
-import Header from '../../features/Home/Header'
+import Header from '../common/Header'
 
 import { Paper, Typography, TextField, Checkbox, Button, Divider, Box } from '@mui/material'
 import { FacebookOutlined } from '@mui/icons-material'
 import { Google } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
-import Footer from '../Home/Footer'
+import Footer from '../common/Footer'
 
 function Login() {
     return (
@@ -38,9 +38,11 @@ function Login() {
                     <Button variant='text' color='primary'>
                         Forgot Password
                     </Button>
-                    <Button size='large' variant='contained' color='secondary' fullWidth sx={{ fontWeight: 'bold', textTransform: 'none' }}>
-                        Login
-                    </Button>
+                    <Link to='/order'>
+                        <Button size='large' variant='contained' color='secondary' fullWidth sx={{ fontWeight: 'bold', textTransform: 'none' }}>
+                            Login
+                        </Button>
+                    </Link>
                     <Divider sx={{ marginY: 3 }}>
                         <Typography>OR</Typography>
                     </Divider>
