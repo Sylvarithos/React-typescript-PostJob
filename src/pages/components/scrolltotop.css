@@ -1,0 +1,30 @@
+@keyframes colorChange {
+  0% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.fab-animated {
+  animation: colorChange 3s infinite; /* 2s duration, infinite loop */
+}
+
+.fab-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../../public/images/arrowup.png') !important;
+  background-repeat: no-repeat ;
+  background-position: center;
+  background-size: 20%;
+}
+
+.fab-button img {
+  width: 50%; /* Adjust this value to make the image smaller */
+  height: auto;
+}

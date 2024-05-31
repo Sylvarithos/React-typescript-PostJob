@@ -8,6 +8,7 @@ import MarketPlaceSection from './MarketPlaceSection'
 import TestimonailsSection from './TestimonailsSection'
 import DownloadSection from './DownloadSection'
 import Footer from '../common/Footer'
+import ScrollToTopButton from '../components/ScrolltotopButton'
 
 function Home() {
     return (
@@ -22,6 +23,7 @@ function Home() {
             <TestimonailsSection />
             <DownloadSection />
             <Footer theme='dark' />
+            {/* <ScrollToTopButton /> */}
         </div>
     )
 }

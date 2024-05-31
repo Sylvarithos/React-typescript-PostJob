@@ -5,6 +5,7 @@ import LoginPage from './pages/Login/'
 import OrderPage from './pages/order/'
 // import Header from './pages/common/Header'
 // import Footer from './pages/common/Footer'
+import ScrollToTopButton from './pages/components/ScrolltotopButton'
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 </Routes>
             </Router>
             {/* <Footer /> */}
+            <ScrollToTopButton />
         </>
 
     )
