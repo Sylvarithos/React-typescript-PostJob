@@ -8,7 +8,7 @@ const ScrollToTopButton = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 300) {
+      if (window.scrollY > window.innerHeight) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
 
   return (
     <Fab
-      style={{
+      sx={{
         display: isVisible ? 'block' : 'none',
         position: 'fixed',
         bottom: '50px',

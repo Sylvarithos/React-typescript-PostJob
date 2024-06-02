@@ -1,0 +1,10 @@
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px; /* Adjust the gap between items */
+}
+
+.carousel-item {
+  flex: 1; /* Each item takes equal space */
+  min-width: 200px; /* Adjust the minimum width of each item */
+}

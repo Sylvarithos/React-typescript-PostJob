@@ -5,7 +5,7 @@ function MarketPlaceSection() {
     return (
         <section className=' bg-primary '>
             <div className='mx-[185px] container'>
-                <div className='bg-marketing-logo bg-contain relative h-[911px] py-16'>
+                <div className='bg-marketing-logo bg-no-repeat bg-contain relative h-[911px] py-16'>
                     <div className='py-16 ml-[870px]'>
                         <h1 className='font-bold text-[49px] text-white leading-tight'>Join World's Best Marketplace for Workers</h1>
                         <h3 className='mt-[40px] mb-[30px] text-[24px] text-white leading-tight'>

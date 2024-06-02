@@ -5,6 +5,26 @@ import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
 import QuestionMarkOutlinedIcon from '@mui/icons-material/QuestionMarkOutlined';
 import { Link } from 'react-router-dom'
 import React, { useState, useRef, useEffect } from 'react';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import Divider from '@mui/material/Divider';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import FolderIcon from '@mui/icons-material/Folder';
+import DeleteIcon from '@mui/icons-material/Delete';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import ListItemButton from '@mui/material/ListItemButton';
 
 
 interface Props {
@@ -53,7 +73,6 @@ function Header(props: Props) {
                             onMouseLeave={handleMouseLeave}>
                             <GridViewOutlinedIcon style={{ width: '1.3rem', marginRight: '0.5rem' }} />
                             <span>Categories</span>
-                            {/* </Typography> */}
                         </div>
                         <Link to='/howitworks' className={`text-${color} self-center font-thin whitespace-nowrap`}>
                             <div className={`flex items-center text-${color} hover:cursor-pointer font-extralight text-[15px] ml-9 font`}>
@@ -83,9 +102,62 @@ function Header(props: Props) {
                 <div
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    className="absolute left-[269px] bg-white p-4 top-32 rounded-lg "
+                    className="absolute left-[267px] top-32 rounded-lg "
                 >
-
+                    <Paper sx={{ color: 'black' }} elevation={3}>
+                        <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={2}>
+                            <div className='px-12 pt-7'>
+                                <Typography sx={{ mt: 1, fontSize: 16, fontWeight: 'bold' }} component="div">
+                                    Services
+                                </Typography>
+                                <List sx={{ width: 450 }}>
+                                    <ListItemButton >
+                                        <ListItemAvatar>
+                                            <BusinessCenterIcon />
+                                        </ListItemAvatar>
+                                        <ListItemText primary="business" />
+                                        <IconButton edge="end"  >
+                                            <ArrowCircleRightIcon sx={{ color: '#07242B' }} />
+                                        </IconButton>
+                                    </ListItemButton>
+                                    <ListItemButton >
+                                        <ListItemAvatar>
+                                            <BusinessCenterIcon />
+                                        </ListItemAvatar>
+                                        <ListItemText primary="business" />
+                                        <IconButton edge="end"  >
+                                            <ArrowCircleRightIcon sx={{ color: '#07242B' }} />
+                                        </IconButton>
+                                    </ListItemButton>
+                                </List>
+                            </div>
+                            <div className='px-12 pt-7'>
+                                <Typography sx={{ mt: 1, fontSize: 16, fontWeight: 'bold' }} component="div">
+                                    Services
+                                </Typography>
+                                <List sx={{ width: 450 }}>
+                                    <ListItemButton >
+                                        <ListItemAvatar>
+                                            <BusinessCenterIcon />
+                                        </ListItemAvatar>
+                                        <ListItemText primary="business" />
+                                        <IconButton edge="end"  >
+                                            <ArrowCircleRightIcon sx={{ color: '#07242B' }} />
+                                        </IconButton>
+                                    </ListItemButton>
+                                    <ListItemButton >
+                                        <ListItemAvatar>
+                                            <BusinessCenterIcon />
+                                        </ListItemAvatar>
+                                        <ListItemText primary="business" />
+                                        <IconButton edge="end"  >
+                                            <ArrowCircleRightIcon sx={{ color: '#07242B' }} />
+                                        </IconButton>
+                                    </ListItemButton>
+                                </List>
+                            </div>
+                        </Stack>
+                    </Paper>
                 </div>
             )}
             {/* </div> */}
